@@ -1,0 +1,58 @@
+/* CSS FILE */
+/* Set header size and location */
+h1 {
+	Font-family: 'Eczar', serif;
+    font-size: 100px;
+    text-align: center;
+}
+
+/* Set caption size and location */
+#Quote {
+	font-family: 'Eczar', serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+/* Set intern image at center and set size */
+#Interns {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+    width: 900px;
+    height: 500px; 
+}
+#Intern{
+	display: none;
+}
+
+/* Set hammer size and call animation to loop forever */
+#Hammer {
+    width: 180px;
+    height: 100px; 
+    position: relative;
+    animation-name: fly;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#flyingHammer{
+	display: none;
+}
+
+#myImage{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Make the hammer fly from side to side inside page*/
+@keyframes fly {
+    0%   {left:0; top:0; transform: rotateY(180deg);}
+    25% {transform: rotateY(180deg);}
+    50% {left:90%; top:0;} 
+    100%{left:0; top:0;}
+}
+body{
+	background-color:black;
+}

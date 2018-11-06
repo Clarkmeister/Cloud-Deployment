@@ -1,0 +1,6 @@
+frontend main
+	bind *:80
+	default_backend app
+
+backend app
+   balance	roundrobin

@@ -1,0 +1,1132 @@
+{
+    "Reservations": [
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-09-06T20:41:15.000Z", 
+                    "PublicIpAddress": "54.214.172.174", 
+                    "PrivateIpAddress": "172.16.1.235", 
+                    "ProductCodes": [
+                        {
+                            "ProductCodeId": "aw0evgkw8e5c1q413zgy5pjce", 
+                            "ProductCodeType": "marketplace"
+                        }
+                    ], 
+                    "VpcId": "vpc-0800713d2533b3c00", 
+                    "CpuOptions": {
+                        "CoreCount": 1, 
+                        "ThreadsPerCore": 1
+                    }, 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-06a1b0c82769dea88", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-014c910084703ab9f", 
+                    "PrivateDnsName": "ip-172-16-1-235.us-west-2.compute.internal", 
+                    "KeyName": "mjolnirKey", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "default", 
+                            "GroupId": "sg-0b0fe70856dcebde5"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0f5052343252769bd", 
+                    "InstanceType": "t2.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "06:10:e4:cf:2a:26", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0800713d2533b3c00", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-00d274b60a10885f4", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateIpAddress": "172.16.1.235", 
+                                    "Primary": true, 
+                                    "Association": {
+                                        "PublicIp": "54.214.172.174", 
+                                        "PublicDnsName": "", 
+                                        "IpOwnerId": "amazon"
+                                    }
+                                }
+                            ], 
+                            "SubnetId": "subnet-0f5052343252769bd", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-0a6b3b81eddb07a1e", 
+                                "AttachTime": "2018-09-06T20:41:15.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "default", 
+                                    "GroupId": "sg-0b0fe70856dcebde5"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "767419211539", 
+                            "PrivateIpAddress": "172.16.1.235", 
+                            "Association": {
+                                "PublicIp": "54.214.172.174", 
+                                "PublicDnsName": "", 
+                                "IpOwnerId": "amazon"
+                            }
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "us-west-2a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-05ac55b9b86407a85", 
+                                "AttachTime": "2018-09-06T20:41:16.000Z"
+                            }
+                        }, 
+                        {
+                            "DeviceName": "/dev/sdf", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-09c933c4af7cda4ca", 
+                                "AttachTime": "2018-09-06T20:41:16.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "mjolnir build Test", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-02df32714c5a6b38b", 
+            "Groups": [], 
+            "OwnerId": "767419211539"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-09-06T20:41:16.000Z", 
+                    "PublicIpAddress": "54.244.151.123", 
+                    "PrivateIpAddress": "172.16.3.18", 
+                    "ProductCodes": [
+                        {
+                            "ProductCodeId": "aw0evgkw8e5c1q413zgy5pjce", 
+                            "ProductCodeType": "marketplace"
+                        }
+                    ], 
+                    "VpcId": "vpc-0800713d2533b3c00", 
+                    "CpuOptions": {
+                        "CoreCount": 1, 
+                        "ThreadsPerCore": 1
+                    }, 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-014a42cc51d9fcdca", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-014c910084703ab9f", 
+                    "PrivateDnsName": "ip-172-16-3-18.us-west-2.compute.internal", 
+                    "KeyName": "mjolnirKey", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "default", 
+                            "GroupId": "sg-0b0fe70856dcebde5"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0149a496536e21302", 
+                    "InstanceType": "t2.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "0a:3d:32:29:81:c0", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0800713d2533b3c00", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-0c3b4fc0435111a9a", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateIpAddress": "172.16.3.18", 
+                                    "Primary": true, 
+                                    "Association": {
+                                        "PublicIp": "54.244.151.123", 
+                                        "PublicDnsName": "", 
+                                        "IpOwnerId": "amazon"
+                                    }
+                                }
+                            ], 
+                            "SubnetId": "subnet-0149a496536e21302", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-06ab887c87d310ca4", 
+                                "AttachTime": "2018-09-06T20:41:16.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "default", 
+                                    "GroupId": "sg-0b0fe70856dcebde5"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "767419211539", 
+                            "PrivateIpAddress": "172.16.3.18", 
+                            "Association": {
+                                "PublicIp": "54.244.151.123", 
+                                "PublicDnsName": "", 
+                                "IpOwnerId": "amazon"
+                            }
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "us-west-2c"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-0478144363fb74ca4", 
+                                "AttachTime": "2018-09-06T20:41:17.000Z"
+                            }
+                        }, 
+                        {
+                            "DeviceName": "/dev/sdf", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-0847889dfc80b8156", 
+                                "AttachTime": "2018-09-06T20:41:17.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "mjolnir build Test", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-0333b9dd1ab00a191", 
+            "Groups": [], 
+            "OwnerId": "767419211539"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-08-16T22:12:13.000Z", 
+                    "PublicIpAddress": "34.214.78.142", 
+                    "PrivateIpAddress": "172.16.3.67", 
+                    "ProductCodes": [
+                        {
+                            "ProductCodeId": "aw0evgkw8e5c1q413zgy5pjce", 
+                            "ProductCodeType": "marketplace"
+                        }
+                    ], 
+                    "VpcId": "vpc-0800713d2533b3c00", 
+                    "CpuOptions": {
+                        "CoreCount": 1, 
+                        "ThreadsPerCore": 1
+                    }, 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-092151f8b620e47be", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-3ecc8f46", 
+                    "PrivateDnsName": "ip-172-16-3-67.us-west-2.compute.internal", 
+                    "KeyName": "packer_5b75f6b6-57cb-fd2e-3018-f5ba5882dc02", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "packer_5b75f6b7-a547-18fc-f164-aabe3530dc1a", 
+                            "GroupId": "sg-07d9dfcd23c219d9d"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0149a496536e21302", 
+                    "InstanceType": "t2.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "0a:59:10:23:90:74", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0800713d2533b3c00", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-042a1411ed19da877", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateIpAddress": "172.16.3.67", 
+                                    "Primary": true, 
+                                    "Association": {
+                                        "PublicIp": "34.214.78.142", 
+                                        "PublicDnsName": "", 
+                                        "IpOwnerId": "amazon"
+                                    }
+                                }
+                            ], 
+                            "SubnetId": "subnet-0149a496536e21302", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-0a6455d56e860da39", 
+                                "AttachTime": "2018-08-16T22:12:13.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "packer_5b75f6b7-a547-18fc-f164-aabe3530dc1a", 
+                                    "GroupId": "sg-07d9dfcd23c219d9d"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "767419211539", 
+                            "PrivateIpAddress": "172.16.3.67", 
+                            "Association": {
+                                "PublicIp": "34.214.78.142", 
+                                "PublicDnsName": "", 
+                                "IpOwnerId": "amazon"
+                            }
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "us-west-2c"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": false, 
+                                "VolumeId": "vol-06dee960542993002", 
+                                "AttachTime": "2018-08-16T22:12:14.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "Packer Builder", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-021a9689bf6055098", 
+            "Groups": [], 
+            "OwnerId": "767419211539"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-09-06T20:41:15.000Z", 
+                    "PublicIpAddress": "35.162.244.72", 
+                    "PrivateIpAddress": "172.16.2.67", 
+                    "ProductCodes": [
+                        {
+                            "ProductCodeId": "aw0evgkw8e5c1q413zgy5pjce", 
+                            "ProductCodeType": "marketplace"
+                        }
+                    ], 
+                    "VpcId": "vpc-0800713d2533b3c00", 
+                    "CpuOptions": {
+                        "CoreCount": 1, 
+                        "ThreadsPerCore": 1
+                    }, 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-09e043863c7e5d203", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-014c910084703ab9f", 
+                    "PrivateDnsName": "ip-172-16-2-67.us-west-2.compute.internal", 
+                    "KeyName": "mjolnirKey", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "default", 
+                            "GroupId": "sg-0b0fe70856dcebde5"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0dca9a6d1eec3e56c", 
+                    "InstanceType": "t2.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:53:cc:23:5c:7a", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0800713d2533b3c00", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-00556bb6f637ba094", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateIpAddress": "172.16.2.67", 
+                                    "Primary": true, 
+                                    "Association": {
+                                        "PublicIp": "35.162.244.72", 
+                                        "PublicDnsName": "", 
+                                        "IpOwnerId": "amazon"
+                                    }
+                                }
+                            ], 
+                            "SubnetId": "subnet-0dca9a6d1eec3e56c", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-0431dccea936fa408", 
+                                "AttachTime": "2018-09-06T20:41:15.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "default", 
+                                    "GroupId": "sg-0b0fe70856dcebde5"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "767419211539", 
+                            "PrivateIpAddress": "172.16.2.67", 
+                            "Association": {
+                                "PublicIp": "35.162.244.72", 
+                                "PublicDnsName": "", 
+                                "IpOwnerId": "amazon"
+                            }
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "us-west-2b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-043ab5d35f5b50b50", 
+                                "AttachTime": "2018-09-06T20:41:16.000Z"
+                            }
+                        }, 
+                        {
+                            "DeviceName": "/dev/sdf", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-0daf6c777dba36f9b", 
+                                "AttachTime": "2018-09-06T20:41:16.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "mjolnir build Test", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-03ce68d9ea4d9047d", 
+            "Groups": [], 
+            "OwnerId": "767419211539"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-08-16T20:12:50.000Z", 
+                    "PublicIpAddress": "54.184.248.251", 
+                    "PrivateIpAddress": "172.16.1.220", 
+                    "ProductCodes": [
+                        {
+                            "ProductCodeId": "aw0evgkw8e5c1q413zgy5pjce", 
+                            "ProductCodeType": "marketplace"
+                        }
+                    ], 
+                    "VpcId": "vpc-0800713d2533b3c00", 
+                    "CpuOptions": {
+                        "CoreCount": 1, 
+                        "ThreadsPerCore": 1
+                    }, 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-04d9c5170df74c9c4", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-3ecc8f46", 
+                    "PrivateDnsName": "ip-172-16-1-220.us-west-2.compute.internal", 
+                    "KeyName": "Tony's Cool Key", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "default", 
+                            "GroupId": "sg-0b0fe70856dcebde5"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0f5052343252769bd", 
+                    "InstanceType": "t2.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "06:48:95:b4:3b:24", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0800713d2533b3c00", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-0976de3d232ea569a", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateIpAddress": "172.16.1.220", 
+                                    "Primary": true, 
+                                    "Association": {
+                                        "PublicIp": "54.184.248.251", 
+                                        "PublicDnsName": "", 
+                                        "IpOwnerId": "amazon"
+                                    }
+                                }
+                            ], 
+                            "SubnetId": "subnet-0f5052343252769bd", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": false, 
+                                "AttachmentId": "eni-attach-0a34a189659a3bbb8", 
+                                "AttachTime": "2018-08-16T20:12:50.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "default", 
+                                    "GroupId": "sg-0b0fe70856dcebde5"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "767419211539", 
+                            "PrivateIpAddress": "172.16.1.220", 
+                            "Association": {
+                                "PublicIp": "54.184.248.251", 
+                                "PublicDnsName": "", 
+                                "IpOwnerId": "amazon"
+                            }
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "us-west-2a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": false, 
+                                "VolumeId": "vol-0132ae440feca4f9a", 
+                                "AttachTime": "2018-08-16T20:12:50.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "sandbox", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "v1", 
+                            "Key": "Version"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-0658e2298a3528489", 
+            "Groups": [], 
+            "OwnerId": "767419211539"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-09-06T20:41:17.000Z", 
+                    "PublicIpAddress": "54.185.172.178", 
+                    "PrivateIpAddress": "172.16.1.185", 
+                    "ProductCodes": [
+                        {
+                            "ProductCodeId": "aw0evgkw8e5c1q413zgy5pjce", 
+                            "ProductCodeType": "marketplace"
+                        }
+                    ], 
+                    "VpcId": "vpc-0800713d2533b3c00", 
+                    "CpuOptions": {
+                        "CoreCount": 1, 
+                        "ThreadsPerCore": 1
+                    }, 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0568d2847ab407909", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-014c910084703ab9f", 
+                    "PrivateDnsName": "ip-172-16-1-185.us-west-2.compute.internal", 
+                    "KeyName": "mjolnirKey", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "default", 
+                            "GroupId": "sg-0b0fe70856dcebde5"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0f5052343252769bd", 
+                    "InstanceType": "t2.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "06:62:39:f6:45:3a", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0800713d2533b3c00", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-0aa5739f58fc890c3", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateIpAddress": "172.16.1.185", 
+                                    "Primary": true, 
+                                    "Association": {
+                                        "PublicIp": "54.185.172.178", 
+                                        "PublicDnsName": "", 
+                                        "IpOwnerId": "amazon"
+                                    }
+                                }
+                            ], 
+                            "SubnetId": "subnet-0f5052343252769bd", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-06a6b157c6421aec9", 
+                                "AttachTime": "2018-09-06T20:41:17.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "default", 
+                                    "GroupId": "sg-0b0fe70856dcebde5"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "767419211539", 
+                            "PrivateIpAddress": "172.16.1.185", 
+                            "Association": {
+                                "PublicIp": "54.185.172.178", 
+                                "PublicDnsName": "", 
+                                "IpOwnerId": "amazon"
+                            }
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "us-west-2a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-08428ad6aceabb6f2", 
+                                "AttachTime": "2018-09-06T20:41:18.000Z"
+                            }
+                        }, 
+                        {
+                            "DeviceName": "/dev/sdf", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-0cf5329793125cb8b", 
+                                "AttachTime": "2018-09-06T20:41:18.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "mjolnir build Test", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-05c65ece785ff6529", 
+            "Groups": [], 
+            "OwnerId": "767419211539"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-08-15T16:29:16.000Z", 
+                    "PublicIpAddress": "52.39.161.62", 
+                    "PrivateIpAddress": "172.16.1.92", 
+                    "ProductCodes": [
+                        {
+                            "ProductCodeId": "aw0evgkw8e5c1q413zgy5pjce", 
+                            "ProductCodeType": "marketplace"
+                        }
+                    ], 
+                    "VpcId": "vpc-0800713d2533b3c00", 
+                    "CpuOptions": {
+                        "CoreCount": 1, 
+                        "ThreadsPerCore": 1
+                    }, 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-006a1f37fca4d52ed", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-3ecc8f46", 
+                    "PrivateDnsName": "ip-172-16-1-92.us-west-2.compute.internal", 
+                    "KeyName": "chris_olsen", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "default", 
+                            "GroupId": "sg-0b0fe70856dcebde5"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0f5052343252769bd", 
+                    "InstanceType": "t2.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "06:8b:b5:1c:be:3a", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0800713d2533b3c00", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-00b62eb2429cdac01", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateIpAddress": "172.16.1.92", 
+                                    "Primary": true, 
+                                    "Association": {
+                                        "PublicIp": "52.39.161.62", 
+                                        "PublicDnsName": "", 
+                                        "IpOwnerId": "amazon"
+                                    }
+                                }
+                            ], 
+                            "SubnetId": "subnet-0f5052343252769bd", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": false, 
+                                "AttachmentId": "eni-attach-0f7f4702435633356", 
+                                "AttachTime": "2018-08-15T16:29:16.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "default", 
+                                    "GroupId": "sg-0b0fe70856dcebde5"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "767419211539", 
+                            "PrivateIpAddress": "172.16.1.92", 
+                            "Association": {
+                                "PublicIp": "52.39.161.62", 
+                                "PublicDnsName": "", 
+                                "IpOwnerId": "amazon"
+                            }
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "us-west-2a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": false, 
+                                "VolumeId": "vol-07a6f798882218457", 
+                                "AttachTime": "2018-08-15T16:29:17.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "sandbox", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "v1", 
+                            "Key": "Version"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-025c147be247b103a", 
+            "Groups": [], 
+            "OwnerId": "767419211539"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-08-15T21:53:27.000Z", 
+                    "PublicIpAddress": "34.221.220.244", 
+                    "PrivateIpAddress": "172.16.1.158", 
+                    "ProductCodes": [
+                        {
+                            "ProductCodeId": "aw0evgkw8e5c1q413zgy5pjce", 
+                            "ProductCodeType": "marketplace"
+                        }
+                    ], 
+                    "VpcId": "vpc-0800713d2533b3c00", 
+                    "CpuOptions": {
+                        "CoreCount": 1, 
+                        "ThreadsPerCore": 1
+                    }, 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0c52fbd1c95ba4cee", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-3ecc8f46", 
+                    "PrivateDnsName": "ip-172-16-1-158.us-west-2.compute.internal", 
+                    "KeyName": "robcoolkey", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "default", 
+                            "GroupId": "sg-0b0fe70856dcebde5"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0f5052343252769bd", 
+                    "InstanceType": "t2.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "06:6b:69:64:21:26", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0800713d2533b3c00", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-0ec878fe7f483ffc0", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateIpAddress": "172.16.1.158", 
+                                    "Primary": true, 
+                                    "Association": {
+                                        "PublicIp": "34.221.220.244", 
+                                        "PublicDnsName": "", 
+                                        "IpOwnerId": "amazon"
+                                    }
+                                }
+                            ], 
+                            "SubnetId": "subnet-0f5052343252769bd", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": false, 
+                                "AttachmentId": "eni-attach-0c18fe4c74d486a46", 
+                                "AttachTime": "2018-08-15T21:53:27.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "default", 
+                                    "GroupId": "sg-0b0fe70856dcebde5"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "767419211539", 
+                            "PrivateIpAddress": "172.16.1.158", 
+                            "Association": {
+                                "PublicIp": "34.221.220.244", 
+                                "PublicDnsName": "", 
+                                "IpOwnerId": "amazon"
+                            }
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "us-west-2a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": false, 
+                                "VolumeId": "vol-000d1e49706a0b91c", 
+                                "AttachTime": "2018-08-15T21:53:27.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "v1", 
+                            "Key": "Version"
+                        }, 
+                        {
+                            "Value": "sandbox", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-0520fe3abd97a554f", 
+            "Groups": [], 
+            "OwnerId": "767419211539"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-09-06T20:41:15.000Z", 
+                    "PublicIpAddress": "54.200.35.142", 
+                    "PrivateIpAddress": "172.16.3.242", 
+                    "ProductCodes": [
+                        {
+                            "ProductCodeId": "aw0evgkw8e5c1q413zgy5pjce", 
+                            "ProductCodeType": "marketplace"
+                        }
+                    ], 
+                    "VpcId": "vpc-0800713d2533b3c00", 
+                    "CpuOptions": {
+                        "CoreCount": 1, 
+                        "ThreadsPerCore": 1
+                    }, 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-01b54f425aad7846b", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-014c910084703ab9f", 
+                    "PrivateDnsName": "ip-172-16-3-242.us-west-2.compute.internal", 
+                    "KeyName": "mjolnirKey", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "default", 
+                            "GroupId": "sg-0b0fe70856dcebde5"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0149a496536e21302", 
+                    "InstanceType": "t2.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "0a:65:48:37:67:e2", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0800713d2533b3c00", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-04af81089ca8ba144", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateIpAddress": "172.16.3.242", 
+                                    "Primary": true, 
+                                    "Association": {
+                                        "PublicIp": "54.200.35.142", 
+                                        "PublicDnsName": "", 
+                                        "IpOwnerId": "amazon"
+                                    }
+                                }
+                            ], 
+                            "SubnetId": "subnet-0149a496536e21302", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-0f2eb96c1073a3bf0", 
+                                "AttachTime": "2018-09-06T20:41:15.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "default", 
+                                    "GroupId": "sg-0b0fe70856dcebde5"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "767419211539", 
+                            "PrivateIpAddress": "172.16.3.242", 
+                            "Association": {
+                                "PublicIp": "54.200.35.142", 
+                                "PublicDnsName": "", 
+                                "IpOwnerId": "amazon"
+                            }
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "us-west-2c"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-02e76b0173f117ebd", 
+                                "AttachTime": "2018-09-06T20:41:16.000Z"
+                            }
+                        }, 
+                        {
+                            "DeviceName": "/dev/sdf", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-020d2adede9eb8fc9", 
+                                "AttachTime": "2018-09-06T20:41:16.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "mjolnir build Test", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-091b2a16862503886", 
+            "Groups": [], 
+            "OwnerId": "767419211539"
+        }
+    ]
+}

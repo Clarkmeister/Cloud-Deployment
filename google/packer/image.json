@@ -1,0 +1,38 @@
+{
+	"variables": {
+		"local": "{{env `USER`}}"
+	},
+	"builders": [
+		{
+			"type": "googlecompute",
+			"account_file": "/export/home/{{user `local`}}/Mjolnir-3056a21c25b5.json",
+			"project_id": "mjolnir-214022",
+			"source_image": "centos-7-v20180815",
+			"ssh_username": "centos",
+			"zone": "us-west1-a",
+			"image_name": "mjolnir-{{timestamp}}",
+			"instance_name": "mjolnir-instance-{{timestamp}}"
+		}
+	],
+	"provisioners": [
+		{
+			"type": "file",
+			"source": "./webServer.tar.gz",
+			"destination": "/tmp/webServer.tar.gz"
+		},
+		{
+			"type": "shell",
+			"inline": [
+				"sudo yum update -y",
+				"sudo yum install docker -y",
+				"curl -LkO http://mjolnir-bucket.s3.amazonaws.com/webServerDockerImage.tar.gz"
+			]
+		},
+		{
+			"type": "shell",
+			"scripts": [
+				"scripts/common/webServer.sh"
+			]
+		}
+	]
+}

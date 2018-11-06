@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+		<title>
+				HAMMER TIME!
+		</title>
+
+		<!-- Link to the CSS Style File -->
+		<head>
+				<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+		</head>
+
+		<body>
+
+				<!-- Flying Hammer -->
+				<img id="Hammer" src="{{ url_for('static', filename='Hammer.jpg') }}" alt="Flying Hammer">
+
+				<!-- Header 1 -->
+				<h1>Team Mjolnir</h1>
+
+				<!-- Caption -->
+				<p id="Quote">"It's Hammer Time!"</p>
+
+				<!-- Centered Intern Image - Note: Jillian didn't want to be seen -->
+				<img id="Interns" src="{{ url_for('static', filename='interns_and_hammer.jpg') }}" alt="Intern_Picture">
+
+
+		</body>
+</html>

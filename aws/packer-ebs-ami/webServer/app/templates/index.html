@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+		<title>
+				HAMMER TIME!
+		</title>
+
+		<!-- Link to the CSS Style File -->
+		<head>
+				<link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet"> 
+				<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+		</head>
+
+		<body>
+
+				<!-- Flying Hammer -->
+
+				<!-- Header 1 -->
+				<div>
+					<img id="myImage" onclick="changeImage()" src="{{ url_for('static', filename='pic_bulboff.gif') }}" width="100" height="180">
+				</div>
+				<h1>Team Mjolnir</h1>
+
+				<div id="flyingHammer">
+					<img id="Hammer" src="{{ url_for('static', filename='Hammer.jpg') }}" alt="Flying Hammer">
+				</div>
+
+				<!-- Caption -->
+				<p id="Quote">"It's Hammer Time!"</p>
+
+
+				<!-- Centered Intern Image - Note: Jillian didn't want to be seen -->
+				<div id="Intern">
+					<img id="Interns" src="{{ url_for('static', filename='interns.jpg') }}" alt="Intern_Picture">
+				</div>
+
+		</body>
+		<script>
+			function changeImage() {
+				var img = document.getElementById("Intern");
+				var hammer = document.getElementById("flyingHammer");
+				var image = document.getElementById("myImage");
+				if (image.src.match("{{ url_for('static', filename='pic_bulbon.gif') }}")) {
+					image.src = "{{ url_for('static', filename='pic_bulboff.gif') }}";
+					document.body.style.background = "black";
+					img.style.display="none";
+					hammer.style.display="none";
+				} else {
+					image.src = "{{ url_for('static', filename='pic_bulbon.gif') }}";
+					document.body.style.background = "white";
+					img.style.display="block";
+					hammer.style.display="block";
+				}
+			}
+		</script>
+</html>

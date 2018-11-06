@@ -1,0 +1,59 @@
+{
+	"variables": {
+		"aws_subnet_id": "{{env `AWS_SUBNET_ID`}}",
+		"aws_vpc_id": "{{env `AWS_VPC_ID`}}",
+		"aws_access_key": "{{env `AWS_ACCESS_KEY`}}",
+		"aws_secret_key": "{{env `AWS_SECRET_KEY`}}",
+		"aws_username": "{{env `AWS_USERNAME`}}"
+	},
+	"builders": [
+		{
+			"name": "Mjolnir-Packer-Instance",
+			"type": "amazon-ebs",
+			"access_key": "{{user `aws_access_key`}}",
+			"secret_key": "{{user `aws_secret_key`}}",
+			"ami_name": "mjolnirEBSAMI {{timestamp}}",
+			"instance_type": "t2.micro",
+			"source_ami": "ami-3ecc8f46",
+			"region": "us-west-2",
+			"ami_description": "AMI by Team Mjolnir, Has Mjolnir Web Server",
+			"ami_virtualization_type": "hvm",
+			"ami_block_device_mappings": [
+				{
+					"device_name": "/dev/sdf",
+					"volume_size": 8,
+					"volume_type": "standard",
+					"delete_on_termination": true
+				}
+			],
+			"associate_public_ip_address": true,
+			"force_deregister": true,
+			"force_delete_snapshot": true,
+			"shutdown_behavior": "terminate",
+			"ssh_username": "centos",
+			"vpc_id": "{{user `aws_vpc_id`}}",
+			"subnet_id": "{{user `aws_subnet_id`}}"
+		}
+	],
+	"provisioners": [
+		{
+			"type": "file",
+			"source": "./webServer.tar.gz",
+			"destination": "/tmp/webServer.tar.gz"
+		},
+		{
+			"type": "shell",
+			"inline": [
+				"sudo yum update -y",
+				"sudo yum install docker -y",
+				"curl -LkO http://mjolnir-bucket.s3.amazonaws.com/webServerDockerImage.tar.gz"
+			]
+		},
+		{
+			"type": "shell",
+			"scripts": [
+				"scripts/common/webServer.sh"
+			]
+		}
+	]
+}

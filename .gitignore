@@ -1,9 +1,50 @@
-#  Local .terraform directories
+############TERRAFORM###########
+# Local .terraform directories
 **/.terraform/*
 
 # .tfstate files
 *.tfstate
 *.tfstate.*
 
-# .tfvars files
-*.tfvars
+# Crash log files
+crash.log
+
+############PYTHON#############
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# PyBuilder
+target/
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# mypy
+.mypy_cache/
+
+############PACKER###########
+# Cache objects
+packer_cache/
+
+# For built boxes
+*.box
+
+*.lock
